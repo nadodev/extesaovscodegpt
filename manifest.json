@@ -1,0 +1,34 @@
+{
+    "name": "Teste com GPT-3",
+    "displayName": " Teste com GPT-3",
+    "description": " Teste com GPT-3",
+    "version": "2.0.0",
+    "publisher": "Leonardo Geja",
+    "engines": {
+      "vscode": "^1.0.0"
+    },
+    "categories": ["Other"],
+    "activationEvents": [
+      "onCommand:extensionCommand"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "extensionCommand",
+          "title": "Executar Comando da Extensão"
+        }
+      ]
+    },
+    "scripts": {
+      "vscode:prepublish": "npm run compile",
+      "compile": "tsc -p ./",
+      "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+      "typescript": "^4.0.0",
+      "@types/node": "^14.0.0",
+      "vscode": "^1.0.0"
+    }
+  }
+  
